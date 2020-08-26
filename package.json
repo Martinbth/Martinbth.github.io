@@ -1,0 +1,23 @@
+{
+  "name": "martinbth.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martinbth/Martinbth.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martinbth/Martinbth.github.io/issues"
+  },
+  "homepage": "https://github.com/Martinbth/Martinbth.github.io#readme",
+  "dependencies": {
+    "tailwindcss": "^1.7.1"
+  }
+}
