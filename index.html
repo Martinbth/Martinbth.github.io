@@ -15,7 +15,7 @@
   <title>Martin Bååth</title>
 </head>
 
-<body class="text-white bg-gray-900">
+<body class="text-white bg-secondary-300 ">
   <!-- navigation -->
   <!-- <div class=" w-24 sm:w-48  fixed block t-0 ">
     <nav class="pt-8  p-0  text-center justify-center ">
@@ -42,31 +42,43 @@
   <!-- navigation -->
   <main>
     <!-- About -->
-    <section class="flex content-center">
+
+    <section id="about" class="flex mb-24">
       <!--Left-->
       <div class="w-1/4 ">
         <div class="flex justify-center">
-          <h1 class="text-6xl font-bold  ml-48 origin-left  transform rotate-90  hover:underline">
-            <a href=""> Bååth. </a>
+          <h1 class="text-6xl font-bold  ml-48 origin-left  transform rotate-90 ">
+             Bååth.
           </h1>
-
         </div>
       </div>
 
 
       <!--Right-->
-      <header class="w-3/4 pr-8">
+      <header class="w-3/4  mb-64">
         <!-- Profile picture -->
-        <div class="select-none cursor-default absolute" id="app" style="font: 12px monospace; line-height:14px; color:#3366ff;">
+        <div class="select-none cursor-default absolute my-32 text-gray-700" id="app" style="font: 12px monospace; line-height:14px;">
         </div>
-
-        <h2 class=" text-base sm:text-xl my-64">With a warning label this big, you know they gotta be fun! Oh, how awful. Did he at least die painlessly? …To shreds, you say. Well, how is his wife holding up? …To
-          shreds, you say. Oh God, what have I done?</h2>
+          <div class="w-3/4 mt-12 ">
+            <h2 id="app" class=" sm:text-lg font-mono  pr-8 sm:w-2/4 absolute">I am a UX/UI designer and developer based in Stockholm, Sweden who loves to  and is constantly trying to explore the world of design. </h2>
+          </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+          <!-- <div class="mt-64 font-mono text-xs text-gray-700 absolute bg-black p-4">
+              <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-white">LinkedIn</a> /  <a href="mailto:martinbaath@gmail.com" class="hover:text-white">Email</a>
+          </div> -->
       </header>
     </section>
 
     <!-- Work -->
-    <section class="grid grid-cols-4 text-xs font-light ">
+    <section class="grid grid-cols-4 text-xs pb-32">
       <!-- Left -->
       <div class="col-span-1 ">
         <div class="flex justify-center ">
@@ -76,57 +88,56 @@
         </div>
       </div>
       <!--Right-->
-      <div class="col-span-3 pr-8" style="font: 12px monospace;">
-        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 lowercase">
+      <div class="col-span-3 mr-8  js-show-on-scroll" style="font: 12px monospace;">
+        <div class=" grid grid-cols-2 gap-3 lowercase">
 
-          <div class="card transform hover:underline">
-            <a href="1.html" class="">
-              <img src="public/img/hero-hitta.png" alt="stew" class="workImg"></img>
-              <br>
-              <span class="text-gray-600">Recipe by Martin</span>
+          <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
+            <a href="brattforsCar.html" class="">
+              <img src="public/img/BF2.png" alt="stew" class="workImg"></img>
+
             </a>
           </div>
 
-          <div class="card transform hover:underline">
-            <a href="1.html" class="transform hover:underline">
-              <img src="public/img/NYClock.jpg" alt="stew" class="workImg"></img>
-              <div class="">
-                <br>
-                <span class="text-gray-600">Recipe by Martin</span>
+          <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
+            <a href="orthoplay.html" class="transform hover:underline">
+              <img src="public/img/TE1.png" alt="stew" class="workImg"></img>
+
             </a>
-          </div>
+
         </div>
 
-        <div class="card transform hover:underline">
-          <img src="public/img/Mark.png" alt="stew" class="w-32 workImg"></img>
-          <br>
-          <span class="text-gray-600 ">Recipe by Martin</span>
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
+
+          <a href="orthoplay.html" class="transform hover:underline">
+          <img src="public/img/PH1.gif" alt="stew" class=" workImg"></img>
+
+          </a>
         </div>
 
         <!-- Repeat -->
-        <div class="card">
-          <img src="public/img/hero-hitta.png" alt="stew" class="workImg"></img>
-          <br>
-          <span class="text-gray-600">Recipe by Martin</span>
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
+
+          <a href="orthoplay.html" class="transform hover:underline">
+          <img src="public/img/PS1.png" alt="stew" class=" workImg"></img>
+
+          </a>
         </div>
-        <div class="card">
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
           <img src="public/img/NYClock.jpg" alt="stew" class="workImg"></img>
           <div class="">
-            <br>
-            <span class="text-gray-600 ">Recipe by Martin</span>
+
           </div>
         </div>
-        <div class="card">
-          <img src="public/img/Mark.png" alt="stew" class="h-32 workImg"></img>
-          <br>
-          <span class="text-gray-600 ">Recipe by Martin</span>
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
+          <img src="public/img/Mark.png" alt="stew" class="w-40 workImg"></img>
+
         </div>
       </div>
       </div>
 
     </section>
     <!-- scrabble -->
-    <section class="grid grid-cols-4 text-xs font-light ">
+    <section class="grid grid-cols-4 text-xs font-light py-32">
       <!-- Left -->
       <div class="col-span-1 ">
         <div class="flex justify-center ">
@@ -136,14 +147,14 @@
         </div>
       </div>
       <!--Right-->
-      <div class="col-span-3 pr-8" style="font: 12px monospace;">
-        <div class=" grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 lowercase">
+      <div class="col-span-3 mr-8 sm:mr-24 text-gray-700 js-show-on-scroll" style="font: 12px monospace;">
+        <div class=" grid grid-cols-2 sm:grid-cols-2 gap-3 lowercase">
 
-          <div class="card transform hover:underline">
+          <div class="card  ">
             <a href="1.html" class="">
-              <img src="public/img/hero-hitta.png" alt="stew" class="workImg"></img>
+              <img src="public/img/TE1.png" alt="stew" class="workImg"></img>
               <br>
-              <span class="text-gray-600">Recipe by Martin</span>
+              <span>Recipe by Martin</span>
             </a>
           </div>
 
@@ -152,87 +163,58 @@
               <img src="public/img/NYClock.jpg" alt="stew" class="workImg"></img>
               <div class="">
                 <br>
-                <span class="text-gray-600">Recipe by Martin</span>
+                <span>Recipe by Martin</span>
             </a>
           </div>
         </div>
 
         <div class="card transform hover:underline">
-          <img src="public/img/Mark.png" alt="stew" class="w-32 workImg"></img>
+          <img src="public/img/BF2.png" alt="stew" class="workImg"></img>
           <br>
-          <span class="text-gray-600 ">Recipe by Martin</span>
+          <span>Recipe by Martin</span>
         </div>
 
         <!-- Repeat -->
         <div class="card">
-          <img src="public/img/hero-hitta.png" alt="stew" class="workImg"></img>
+          <img src="public/img/PS1.png" alt="stew" class="workImg"></img>
           <br>
-          <span class="text-gray-600">Recipe by Martin</span>
+          <span>Recipe by Martin</span>
         </div>
         <div class="card">
           <img src="public/img/NYClock.jpg" alt="stew" class="workImg"></img>
           <div class="">
             <br>
-            <span class="text-gray-600 ">Recipe by Martin</span>
+            <span>Recipe by Martin</span>
           </div>
         </div>
         <div class="card">
-          <img src="public/img/Mark.png" alt="stew" class="h-32 workImg"></img>
+          <img src="public/img/BF3.png" alt="stew" class=" workImg"></img>
           <br>
-          <span class="text-gray-600 ">Recipe by Martin</span>
+          <span>Recipe by Martin</span>
         </div>
       </div>
       </div>
 
     </section>
 
-    <footer class="grid grid-cols-4  text-xs">
+    <footer class="grid grid-cols-4  mb-16">
       <div class="col-span-1">
 
       </div>
-      <div class="col-span-3 pr-8">
-
-
-        <div class="grid grid-cols-2 gap-6  border-t border-gray-800 py-6">
-
-          <div>
+      <div class="col-span-3 mr-8 sm:mr-24 text-gray-700 font-mono ">
+        <div class="border-t border-gray-800 py-6 text-sm">
             <ul>
               <li>
-                <h1 class="text-sm font-semibold">Martin Bååth</h1>
+                <a href="#about" class="hover:text-white">Martin Bååth.</a>
               </li>
               <li>
-                +46 076 512 537
+                <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-white">LinkedIn</a>
               </li>
               <li>
-                martinbaath@gmail.com</li>
+                <a href="mailto:martinbaath@gmail.com" class="hover:text-white">Email</a>
+              </li>
+
             </ul>
-          </div>
-
-          <div>
-            <ul>
-              <li>
-                <div class="flex justify-end text-right transform hover:underline">
-                  <a href="#">Curriculum vitae</a>🎓
-                  <svg viewBox="0 0 20 20" fill="currentColor" class="link w-5 h-5">
-                    <path fill-rule="evenodd"
-                      d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-              </li>
-              <li>
-                <div class="flex justify-end text-right">
-                  <svg viewBox="0 0 20 20" fill="currentColor" class="link w-5 h-5">
-                    <path fill-rule="evenodd"
-                      d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <a href="#" class="transform hover:underline">LinkedIn</a>
-              </li>
-          </div>
-
-          </ul>
-        </div>
-
 
       </div>
       </div>
