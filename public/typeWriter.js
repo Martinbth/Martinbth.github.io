@@ -20,8 +20,20 @@
    observer.observe(target);
  });
 
-
-
+ var animation = lottie.loadAnimation({
+   container: document.getElementById('bm'),
+   renderer: 'svg',
+   loop: true,
+   autoplay: true,
+   path: 'Oops.json'
+ })
+ var animation2 = lottie.loadAnimation({
+   container: document.getElementById('turtle'),
+   renderer: 'svg',
+   loop: true,
+   autoplay: true,
+   path: 'turtle.json'
+ })
 
 
 var typewriter = new Typewriter(app, {
