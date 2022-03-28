@@ -22,14 +22,13 @@ h3{
 
 h1{
   break-inside: avoid;
-
 }
 
 body{
   overflow-x: hidden;
 }
 
-.card h1{
+.card h2{
   font-weight: 400;
   font-size: 12px;
 }
