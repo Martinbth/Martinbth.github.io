@@ -5,195 +5,272 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <link rel="stylesheet" href="public/styles.css" />
+  <link rel="stylesheet" href="public/myStyles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-
-
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   </script>
-
-
   <title>Martin Bååth</title>
 </head>
 
-<body class="text-white bg-secondary-300 ">
-  <!-- navigation -->
-  <!-- <div class=" w-24 sm:w-48  fixed block t-0 ">
-    <nav class="pt-8  p-0  text-center justify-center ">
-      <ul class="text-sm md:text-base space-y-6">
-        <li class="py-8 transform rotate-90  transform hover:underline">
-          <h1 class="">
-            <a href="#section1">About</a>
-          </h1>
-        </li>
-        <li class="py-8 transform rotate-90  transform hover:underline">
-          <h1>
-            <a href="#section2">Work</a>
-          </h1>
-        </li>
-        <li class="py-8 transform  rotate-90 transform hover:underline">
-          <h1>
-            <a href="#section3">Scrabble</a>
-          </h1>
-        </li>
-      </ul>
+<body class="text-white bg-secondary-300 font-bold js-show-on-scroll">
 
-    </nav>
-  </div> -->
   <!-- navigation -->
   <main>
-    <!-- About -->
+    <div class="select-none cursor-default absolute  text-gray-700 overlay z-20" id="overlay" >  </div>
 
-    <section id="about" class="flex mb-24">
+    <!-- About -->
+    <section id="about" class="flex mb-24 ">
       <!--Left-->
       <div class="w-1/4 ">
         <div class="flex justify-center">
-          <h1 class="text-6xl font-bold  ml-48 origin-left  transform rotate-90 ">
+          <h1 class="text-6xl font-bold  ml-48 origin-left font-bold  transform rotate-90  z-20">
              Bååth.
           </h1>
         </div>
       </div>
-
-
       <!--Right-->
-      <header class="w-3/4  mb-64">
+      <!-- <header id="facts" class="z-20 col-span-3"> -->
         <!-- Profile picture -->
-        <div class="select-none cursor-default absolute my-32 text-gray-700" id="app" style="font: 12px monospace; line-height:14px;">
-        </div>
-          <div class="w-3/4 mt-12 ">
-            <h2 id="app" class=" sm:text-lg font-mono  pr-8 sm:w-2/4 absolute">I am a UX/UI designer and developer based in Stockholm, Sweden who loves to  and is constantly trying to explore the world of design. </h2>
-          </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-          <!-- <div class="mt-64 font-mono text-xs text-gray-700 absolute bg-black p-4">
-              <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-white">LinkedIn</a> /  <a href="mailto:martinbaath@gmail.com" class="hover:text-white">Email</a>
-          </div> -->
+
+      <!-- <div  class="w-3/4 mt-12">
+            <h2 id="app" class=" sm:text-lg font-mono  pr-8 sm:w-2/4 absolute  z-20">I am a UX/UI designer and developer based in Stockholm, Sweden who loves to  and is constantly trying to explore the world of design. </h2>
+          </div>  -->
+
+
+    <div class="grid grid-cols-3 sm:grid-cols-5 gap-12  mt-8  text-sm z-30">
+
+      <div>
+        <h3 class="text-gray-100 leading-7 font-bold">Well hello there<h3>
+        </br>
+        <span class="text-gray-400" style="font: 12px monospace; line-height:10px;">
+          Im an artist and love to be around beautiful and meaningful
+          My name is Martin and i'm a user experience designer: Striving to make the world around me simpler yet more enjoyeble in every shape or form.</span>
+      </div>
+      <div>
+        <h3 class="text-gray-100 leading-7 font-bold">Experience<h3>
+        </br>
+          <span class="text-gray-400" style="font: 12px monospace; line-height:10px;">
+            Studied Art in Stockholm and M.sc in Interaction & Design at Umeå University. Artist, UX and Full Stack Developer.
+           </span>
+      </div>
+      <div>
+        <h3 class="text-gray-100 leading-7 font-bold">Skills<h3>
+          </br>
+          <span class="text-gray-400" style="font: 12px monospace; line-height:10px;">XD &bull; Figma &bull;
+              Javascript &bull; HTML &bull; DOM &bull; Phyton&bull; Java &bull; C and all that jazz.
+             Currently trying to learn Motion Design.
+          </span>
+      </div>
+      <div>
+        <h3 class="text-gray-100 leading-7 font-bold">Contact<h3>
+</br>
+          <ul class="text-gray-400" style="font: 12px monospace; line-height:16px;">
+            <li>
+              <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-white decoration-pink-500">LinkedIn</a>
+            </li>
+            <li>
+              <a href="mailto:martinbaath@gmail.com" class="hover:text-white decoration-pink-500">Email</a>
+            </li>
+          </ul>
+      </div>
+      <!-- <div class="font-bold text-gray-500" id="app" style="font: 12px monospace; line-height:14px; height:435px;"></div> -->
+
+
+
+
       </header>
     </section>
 
     <!-- Work -->
-    <section class="grid grid-cols-4 text-xs pb-32">
+
+
+    <section  class="grid grid-cols-4 text-xs pb-32  ">
       <!-- Left -->
-      <div class="col-span-1 ">
+      <div class="col-span-1">
         <div class="flex justify-center ">
-          <div class="text-lg ml-8 font-semibold origin-left transform rotate-90 ">
+          <div class="text-lg ml-16  font-bold origin-left transform rotate-90">
             <h1>Work.</h1>
           </div>
         </div>
       </div>
       <!--Right-->
-      <div class="col-span-3 mr-8  js-show-on-scroll" style="font: 12px monospace;">
-        <div class=" grid grid-cols-2 gap-3 lowercase">
-
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
-            <a href="brattforsCar.html" class="">
-              <img src="public/img/BF2.png" alt="stew" class="workImg"></img>
-
+      <div id="work"  class="col-span-3 row-start-auto mr-4">
+        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
+            <a href="brattforsCar.html">
+              <img src="public/img/work/te-cover.png" alt="stew" class="workImg"></img>
             </a>
           </div>
-
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
+          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
             <a href="orthoplay.html" class="transform hover:underline">
-              <img src="public/img/TE1.png" alt="stew" class="workImg"></img>
-
-            </a>
-
-        </div>
-
-        <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
-
-          <a href="orthoplay.html" class="transform hover:underline">
-          <img src="public/img/PH1.gif" alt="stew" class=" workImg"></img>
-
+            <video src="public/img/work/teanimation.mov" preload="auto" autoplay="" loop="" type="video/quicktime" webkit-playsinline="" class="workImg"></video>
           </a>
         </div>
-
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
+          <a href="papahana.html" class="transform hover:underline">
+            <video src="public/img/work/papahana-cover.mov" preload="auto" autoplay="" loop="" type="video/quicktime" webkit-playsinline="" class="workImg"></video>
+          </a>
+        </div>
         <!-- Repeat -->
-        <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
-
-          <a href="orthoplay.html" class="transform hover:underline">
-          <img src="public/img/PS1.png" alt="stew" class=" workImg"></img>
-
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
+          <a href="pinchy.html" class="transform hover:underline">
+          <img src="public/img/work/pinchy-cover.png" alt="stew" class=" workImg"></img>
           </a>
         </div>
         <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
-          <img src="public/img/NYClock.jpg" alt="stew" class="workImg"></img>
+            <a href="ubiquitouscomputing.html" class="transform hover:underline">
+          <img src="public/img//work/uc-cover.png" alt="stew" class="workImg"></img>
+            </a>
           <div class="">
-
           </div>
         </div>
+
         <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
-          <img src="public/img/Mark.png" alt="stew" class="w-40 workImg"></img>
-
+          <a href="localconnect.html" class="transform hover:underline">
+          <img src="public/img//work/z-cover.png" alt="stew" class="workImg"></img>
+          </a>
+          <div class="">
+          </div>
         </div>
-      </div>
-      </div>
 
+
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
+          <a href="uichallange25.html" class="transform hover:underline">
+          <img src="public/img/work/uichallange-cover.png" alt="stew" class=" workImg"></img>
+          </a>
+        </div>
+
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
+          <a href="hej.html" class="transform hover:underline">
+          <img src="public/img/work/gainers-cover.png" alt="stew" class=" workImg"></img>
+          </a>
+        </div>
+
+
+        <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
+          <a href="timeperception.html" class="transform hover:underline">
+          <img src="public/img/work/perception-cover.png" alt="My Happy SVG" class="workImg"></img>
+          </a>
+        </div>
+
+</object>
+      </div>
+      </div>
     </section>
     <!-- scrabble -->
     <section class="grid grid-cols-4 text-xs font-light py-32">
       <!-- Left -->
       <div class="col-span-1 ">
         <div class="flex justify-center ">
-          <div class="text-lg ml-16 font-semibold origin-left transform rotate-90 ">
+          <div class="text-lg ml-16 font-bold origin-left transform rotate-90">
             <h1>Scrabble.</h1>
           </div>
         </div>
       </div>
       <!--Right-->
-      <div class="col-span-3 mr-8 sm:mr-24 text-gray-700 js-show-on-scroll" style="font: 12px monospace;">
-        <div class=" grid grid-cols-2 sm:grid-cols-2 gap-3 lowercase">
+      <!-- <div class="select-none   text-gray-500 z-20" id="app" style="font: 12px monospace; line-height:14px;">
+      </div> -->
+
+
+      <div class="col-span-3 mr-8 font-normal text-gray-500 js-show-on-scroll" style="font: 12px monospace; ">
+        <div class=" grid grid-cols-1 sm:grid-cols-3 gap-8 ">
+
+
+
           <div class="card">
-            <a href="1.html" class="">
-              <div id="bm">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>Ermir - Clay</h1>
+            </div>
+            <img src="public/img//scrabble/ermir.png" alt="stew" class="workImg"></img>
+          </div>
 
+
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>Pride - Illustrator </h1>
+            </div>
+            <img src="public/img/scrabble/pride.png" alt="stew" class="workImg"></img>
+          </div>
+
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>Bild the wall - Illustrator </h1>
+            </div>
+            <img src="public/img/scrabble/buildthewall.png" alt="stew" class="workImg"></img>
+          </div>
+
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>Glasses - Illustrator </h1>
+            </div>
+            <img src="public/img/scrabble/glasses.png" alt="stew" class="workImg"></img>
+          </div>
+
+          <div class="card transition duration-500 ease-in-out ">
+            <div class="text-sm -m-2  font-bold origin-left transform rotate-90 ">
+              <h1>Kid play - Oil on canvas</h1>
+            </div>
+            <img src="public/img/scrabble/kids.png" alt="stew" class="workImg"></img>
+          </div>
+
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>64 - Illustrator </h1>
+            </div>
+            <img src="public/img/scrabble/64.png" alt="stew" class="workImg"></img>
+          </div>
+
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>Pizza - Illustrator </h1>
+            </div>
+            <img src="public/img/scrabble/pizza.png" alt="stew" class="workImg"></img>
+          </div>
+
+          <div class="card">
+            <div class="text-sm -m-3  font-bold origin-left transform rotate-90 ">
+              <h1>Lady - Plaster</h1>
+            </div>
+            <img src="public/img//scrabble/lady.png" alt="stew" class="workImg">
+          </img>
+          </div>
+
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>Golden Section - Illustrator </h1>
+            </div>
+            <img src="public/img/scrabble/goldensection.png" alt="stew" class="workImg"></img>
+          </div>
+
+          <div class="card transition  duration-500 ease-in-out  transform  hover:scale-102">
+            <div class="text-sm -m-2 font-bold origin-left transform rotate-90">
+              <h1>Motion design</h1>
+            </div>
+              <div id="bm" class="workImg ">
               </div>
-              <br>
-              <span>Recipe by Martin</span>
-            </a>
           </div>
 
-          <div class="card transform hover:underline">
-            <a href="1.html" class="transform hover:underline">
-              <div id="turtle">
-                <br>
-                <span>Recipe by Martin</span>
-            </a>
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>Zug Zug - Illustrator </h1>
+            </div>
+            <img src="public/img/scrabble/zugzug.png" alt="stew" class="workImg"></img>
           </div>
-        </div>
 
-        <div class="card transform hover:underline">
-          <img src="public/img/BF2.png" alt="stew" class="workImg"></img>
-          <br>
-          <span>Recipe by Martin</span>
-        </div>
-
+          <div class="card">
+            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+              <h1>lady - grafik </h1>
+            </div>
+            <img src="public/img/scrabble/ladyinblack.png" alt="stew" class="workImg"></img>
+          </div>
         <!-- Repeat -->
-        <div class="card">
-          <img src="public/img/PS1.png" alt="stew" class="workImg"></img>
-          <br>
-          <span>Recipe by Martin</span>
-        </div>
-        <div class="card">
-          <img src="public/img/NYClock.jpg" alt="stew" class="workImg"></img>
-          <div class="">
-            <br>
-            <span>Recipe by Martin</span>
-          </div>
-        </div>
-        <div class="card">
-          <img src="public/img/BF3.png" alt="stew" class=" workImg"></img>
-          <br>
-          <span>Recipe by Martin</span>
-        </div>
+
       </div>
       </div>
+
 
     </section>
 
@@ -213,25 +290,16 @@
               <li>
                 <a href="mailto:martinbaath@gmail.com" class="hover:text-white">Email</a>
               </li>
-
             </ul>
-
       </div>
       </div>
     </footer>
-
-
-
-    </div>
     <!-- Grid end -->
+
   </main>
 
-<script type="text/javascript" src="public/lottie.js">
-
-</script>
-  <script type="text/javascript" src="public/typeWriter.js">
-
-  </script>
+<script type="text/javascript" src="public/lottie.js"></script>
+<script type="text/javascript" src="public/typeWriter.js"></script>
 
 </body>
 
