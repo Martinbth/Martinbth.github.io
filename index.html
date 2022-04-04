@@ -9,13 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  </script>
+
   <title>Martin Bååth</title>
 </head>
 
-<body class="text-white bg-secondary-300 font-bold js-show-on-scroll">
+<body class="text-white bg-secondary-300  font-light js-show-on-scroll">
 
   <!-- navigation -->
   <main>
@@ -26,7 +27,7 @@
       <!--Left-->
       <div class="w-1/4 ">
         <div class="flex justify-center">
-          <h1 class="text-6xl font-bold  ml-48 origin-left font-bold  transform rotate-90  z-20">
+          <h1 class="text-6xl font-bold  ml-48 origin-left   transform rotate-90  z-20">
              Bååth.
           </h1>
         </div>
@@ -40,12 +41,49 @@
           </div>  -->
 
 
-    <div class="grid grid-cols-3 sm:grid-cols-5 gap-12  mt-8  text-sm z-30">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-12 mt-10 mr-8 text-base   z-30">
 
-      <div>
-        <h3 class="text-gray-100 leading-7 font-bold">Well hello there<h3>
+      <div class="col-span-2  lg:col-span-1">
+        <h3 class="text-gray-100 leading-8  text-2xl">Hi!<h3>
+        <span class="text-gray-100 ">
+          My name is Martin Bååth, i'm a user experience designer: Striving to make the world around me a bit more beautiful and enjoyeble place live in.
+          </span>
+      </div>
+      <div class="col-span-2 lg:col-span-1 mr-6">
+        <h3 class="text-gray-100 leading-8  text-2xl">Experience<h3>
+        <span class="text-gray-100 " >
+          Studied Art in Stockholm and M.sc in Interaction & Design at Umeå University.
+        </span>
+      </div>
+    <div class="col-span-2 lg:col-span-1  ">
+      <h3 class="text-gray-100 leading-8 text-2xl">Skills</h3>
+      <ul>
+        <li>XD</li>
+        <li>Figma</li>
+        <li>Illustrator</li>
+        <li>C</li>
+        <li>Java</li>
+        <li>Phyton</li>
+        <li>Full stack developer</li>
+      </ul>
+    </div>
+    <div class="col-span-2 lg:col-span-1  mr-8">
+      <h3 class="text-gray-100 leading-8 text-2xl">Contact<h3>
+        <ul class="" >
+
+          <li>
+            <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-black hover:bg-white">[LinkedIn]</a>
+          </li>
+          <li>
+            <a href="mailto:martinbaath@gmail.com" class="hover:text-black hover:bg-white">[Email]</a>
+          </li>
+        </ul>
+    </div>
+
+      <!-- <div>
+        <h3 class="text-gray-100 leading-7 font-mono">Well hello there<h3>
         </br>
-        <span class="text-gray-400" style="font: 12px monospace; line-height:10px;">
+        <span class="text-gray-400 font-mono">
           Im an artist and love to be around beautiful and meaningful
           My name is Martin and i'm a user experience designer: Striving to make the world around me simpler yet more enjoyeble in every shape or form.</span>
       </div>
@@ -57,9 +95,10 @@
            </span>
       </div>
       <div>
-        <h3 class="text-gray-100 leading-7 font-bold">Skills<h3>
+        <h3 class="text-gray-100 leading-7 font-mono">Skills<h3>
           </br>
-          <span class="text-gray-400" style="font: 12px monospace; line-height:10px;">XD &bull; Figma &bull;
+          <span class="text-gray-400"><h5 class="text-blue-400">XD</h5>
+             &bull; Figma &bull;
               Javascript &bull; HTML &bull; DOM &bull; Phyton&bull; Java &bull; C and all that jazz.
              Currently trying to learn Motion Design.
           </span>
@@ -75,10 +114,11 @@
               <a href="mailto:martinbaath@gmail.com" class="hover:text-white decoration-pink-500">Email</a>
             </li>
           </ul>
-      </div>
+      </div> -->
+
       <!-- <div class="font-bold text-gray-500" id="app" style="font: 12px monospace; line-height:14px; height:435px;"></div> -->
 
-
+</div>
 
 
       </header>
@@ -87,7 +127,7 @@
     <!-- Work -->
 
 
-    <section  class="grid grid-cols-4 text-xs pb-32  ">
+    <section  class="grid grid-cols-4 text-xs pb-32 mt-64 ">
       <!-- Left -->
       <div class="col-span-1">
         <div class="flex justify-center ">
@@ -144,8 +184,10 @@
         </div>
 
         <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-          <a href="hej.html" class="transform hover:underline">
-          <img src="public/img/work/gainers-cover.png" alt="stew" class=" workImg"></img>
+          <a href="gainers.html" class="transform hover:underline">
+            <video src="public/img/work/gainers/demo.mov" preload="auto" autoplay="" loop="" type="video/quicktime" webkit-playsinline="" class="workImg"></video>
+
+          <!-- <img src="public/img/work/gainers-cover.png" alt="stew" class=" workImg"></img> -->
           </a>
         </div>
 
@@ -175,13 +217,11 @@
       </div> -->
 
 
-      <div class="col-span-3 mr-8 font-normal text-gray-500 js-show-on-scroll" style="font: 12px monospace; ">
-        <div class=" grid grid-cols-1 sm:grid-cols-3 gap-8 ">
-
-
+      <div class="col-span-3 mr-8  text-gray-100  js-show-on-scroll" >
+        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-8 font-light text-sm">
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="-m-2  origin-left transform rotate-90">
               <h2>Ermir - Clay</h2>
             </div>
             <img src="public/img//scrabble/ermir.png" alt="stew" class="workImg"></img>
@@ -189,49 +229,49 @@
 
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class=" -m-2 origin-left transform rotate-90">
               <h2>Pride - Illustrator </h2>
             </div>
             <img src="public/img/scrabble/pride.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="-m-2  origin-left transform rotate-90">
               <h2>Bild the wall - Illustrator </h2>
             </div>
             <img src="public/img/scrabble/buildthewall.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="-m-2 origin-left transform rotate-90">
               <h2>Glasses - Illustrator </h2>
             </div>
             <img src="public/img/scrabble/glasses.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card transition duration-500 ease-in-out ">
-            <div class="text-sm -m-2  font-bold origin-left transform rotate-90 ">
+            <div class="-m-2 origin-left transform rotate-90 ">
               <h2>Kid play - Oil on canvas</h2>
             </div>
             <img src="public/img/scrabble/kids.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="-m-2 origin-left transform rotate-90">
               <h2>64 - Illustrator </h2>
             </div>
             <img src="public/img/scrabble/64.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="-m-2 origin-left transform rotate-90">
               <h2>Pizza - Illustrator </h2>
             </div>
             <img src="public/img/scrabble/pizza.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card">
-            <div class="text-sm -m-3  font-bold origin-left transform rotate-90 ">
+            <div class="text-sm -m-3 origin-left transform rotate-90 ">
               <h2>Lady - Plaster</h2>
             </div>
             <img src="public/img//scrabble/lady.png" alt="stew" class="workImg">
@@ -239,14 +279,14 @@
           </div>
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="text-sm  -m-2  origin-left transform rotate-90">
               <h2>Golden Section - Illustrator </h2>
             </div>
             <img src="public/img/scrabble/goldensection.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card transition  duration-500 ease-in-out  transform  hover:scale-102">
-            <div class="text-sm -m-2 font-bold origin-left transform rotate-90">
+            <div class="text-sm -m-2 origin-left transform rotate-90">
               <h2>Motion design</h2>
             </div>
               <div id="bm" class="workImg ">
@@ -254,14 +294,14 @@
           </div>
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="text-sm  -m-2 origin-left transform rotate-90">
               <h2>Zug Zug - Illustrator </h2>
             </div>
             <img src="public/img/scrabble/zugzug.png" alt="stew" class="workImg"></img>
           </div>
 
           <div class="card">
-            <div class="text-sm  -m-2 font-bold origin-left transform rotate-90">
+            <div class="text-sm  -m-2 origin-left transform rotate-90">
               <h2>lady - grafik </h2>
             </div>
             <img src="public/img/scrabble/ladyinblack.png" alt="stew" class="workImg"></img>
@@ -278,17 +318,17 @@
       <div class="col-span-1">
 
       </div>
-      <div class="col-span-3 mr-8 sm:mr-24 text-gray-700 font-mono ">
-        <div class="border-t border-gray-800 py-6 text-sm">
+      <div class="col-span-3 mr-8 sm:mr-24 ">
+        <div class="border-t border-gray-800 py-6 text-base">
             <ul>
-              <li>
-                <a href="#about" class="hover:text-white">Martin Bååth.</a>
+              <li >
+              Martin Bååth.
               </li>
               <li>
-                <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-white">LinkedIn</a>
+                <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-black hover:bg-white">[LinkedIn]</a>
               </li>
               <li>
-                <a href="mailto:martinbaath@gmail.com" class="hover:text-white">Email</a>
+                <a href="mailto:martinbaath@gmail.com" class="hover:text-black hover:bg-white">[Email]</a>
               </li>
             </ul>
       </div>

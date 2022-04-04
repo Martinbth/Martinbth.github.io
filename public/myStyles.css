@@ -16,19 +16,25 @@
   pointer-events: none;
 }
 
-h3{
-  color:white;
+span{
+  /* font-family: 'IBM Plex Mono', monospace;
+  font-style: italic; */
 }
+
 
 h1{
   break-inside: avoid;
+
+
 }
 
 body{
   overflow-x: hidden;
+
+  /* font-family: 'Rosarivo', serif; */
 }
 
 .card h2{
-  font-weight: 400;
-  font-size: 12px;
+  /* font-weight: 400;
+  font-size: 12px; */
 }
