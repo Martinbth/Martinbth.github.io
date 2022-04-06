@@ -26,13 +26,18 @@ h1{
   break-inside: avoid;
 
 }
-
+html, body {
+  overflow-x: hidden;
+}
 
 body{
-  overflow-x: hidden;
+  position: relative
+  /* overflow-x: hidden; */
 
   /* font-family: 'Rosarivo', serif; */
 }
+
+
 
 .card h2{
   /* font-weight: 400;
