@@ -21,16 +21,16 @@ var blur = new Boolean(true);
       if (!blur && pixs == 0){
           blur=true;
           setTimeout(function(){
-           $('.overlay').transition({ opacity: 1}, 'fast');
-          }, 100);
+           $('.overlay').transition({ opacity: 1}, 400);
+         }, 400);
           $('#work')
           .transition({ scale: 1 }, 500)
           .css("pointer-events", "none");
       }else if(blur && pixs > 100){
         blur=false;
         setTimeout(function(){
-        $('.overlay').transition({ opacity: 0}, 'fast');
-}, 100);
+        $('.overlay').transition({ opacity: 0}, 400);
+}, 400);
 
         $('#work')
         .transition({ scale: 0.72}, 400)

@@ -5,7 +5,7 @@
   width: 140vw;
   display: block;
   position:absolute;
-  -webkit-backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(10px);
   opacity:1;
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.5);
