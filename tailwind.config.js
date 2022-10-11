@@ -1,40 +1,48 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: [],
+  content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
-
+    borderRadius: {
+      'none': '0',
+      'sm': '0.125rem',
+      DEFAULT: '0.25rem',
+      DEFAULT: '4px',
+      'md': '0.375rem',
+      'lg': '1rem',
+      'full': '9999px',
+      'large': '12px',
+    },
     extend: {
-      animation: {
-        fadeIn: "fadeIn 0.3s ease-in forwards"
-      },
-      keyframes: {
-        fadeIn: {
-          "0%": { opacity: 0 },
-          "100%": { opacity: 1 }
-        }
-      },
-      fontSize: {
-        '7xl': '7rem',
-        '8xl': '8rem',
-        '9xl': '9em',
-        '10xl': '10rem',
-
+      fontFamily: {
+        sans: [
+          '"Helvetica Neue"',
+          'Roboto',
+          'sans-serif',
+          
+        ],
       },
       colors: {
-        primary: '#FF6363',
-        secondary: {
-          100: '#E2E2D5',
-          200: '#888883',
-         300:'#1a1a1b'
-        }
+        startPrim:'#11100D',
+        lcPrim: '#1D0505',
+        lcSec:'#FF2727',
+        uiPrim:'#00071B',
+        uiSec:'#0047FF',
+        tePrim:'#110C03',
+        tesec:'#ED9B37',
+        papaPrim:'#1B0000',
+        papasec:'#de3b7c',
+        brattPrim:'#0B0B1F',
+        brattsec:'#5A57FD',
+        gainerPrim:'#0C0E0A',
+        gainersec:'#BAFF75',
+        footerPrim:'#0A1305',
+        footerSec:"#7CCD54",
+        footerhighlight:"#284619",
       },
-      scale: {
-        '101': '1.01',
-        '102': '1.02',
-      }
     },
   },
-  variants: {
-     animation: ["motion-safe"]
-  },
-  plugins: [],
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ],
 }

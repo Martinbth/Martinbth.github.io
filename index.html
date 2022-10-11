@@ -1,328 +1,472 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, minimum-scale=1.0,viewport-fit=cover">
-  <link rel="stylesheet" href="public/styles.css" />
-  <link rel="stylesheet" href="public/myStyles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0,viewport-fit=cover"> -->
+      <title>Document</title>
+      <link href="./dist/output.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <!-- Alpine Plugins -->
+      <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+      <!-- Alpine Core -->
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <script src="./dist/myJS.js"></script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-  <title>Martin</title>
 </head>
+<body x-data class="p">
+      <a name="top"></a>
+      <div class="bg-startPrim">
+      <div class="section text-amber-100 ">
+            <div class="flex justify-center mt-48 tracking-tighter ">
+                  <h1 class="mix-blend-difference col-span-3 md:col-start-1 row-start-1 text-6xl md:text-7xl transform rotate-90  mix z-50 hover:mix-blend-difference">
+                        <a href="#top">Bååth</a>
+                  </h1>
+            </div>
+            <div class="info row-start-1 col-start-2 mt-36 " x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Well hello there</h1>
+                  <p>My name is Martin Bååth and I'm a user experience designer: Striving to make the world around me a bit more enjoyable place to live in – one user test at a time ;)</p>
+            </div>
+            <div class="info row-start-2 col-start-2" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Experience</h1>
+                  <p>Studied Art in Stockholm and M.sc Interaction & Design at Umeå University.</p>
+            </div>
+            <div class="info row-start-3 col-start-2" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Skills</h1>
+                  <div class="flex justify-between font-semibold">
+                        <ul>
+                              <li>XD</li>
+                              <li>Figma</li>
+                              <li>Adobe Suite</li>
+                        </ul>
+                        <ul>
+                              <li>Phyton</li>
+                              <li>Swift</li>
+                              <li>Full stack</li>
+                              <li>C</li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="col-start-2 row-start-4" x-intersect="$el.classList.add('fadeInUp')">
+                        <div>
+                              <h1 class="titel">Contact</h1>
+                              <p class=" hover:text-gray-400"><a href="mailto:martinbaath@gmail.com">[Mail]</a></p>
+                  <p class=" hover:text-gray-400"><a href="https://se.linkedin.com/in/martin-bååth-3160a817b" >[LinkedIn]</a></p>
+                  <p class=" hover:text-gray-400"><a href="src/CV-MartinBååth.pdf" >[CV]</a></p>
+                        </div>
+            </div>
+            <div class=" hover:animate-bounce col-span-5 col-start-3 row-span-4 row-start-2 sm:-mr-48 md:col-span-3 md:col-start-5 md:row-start-2 mix-blend-difference" >
+                  <img src="src/img/me.png" ></img>
+            </div>
+      </div>
+</div>
 
-<body class="text-gray-400 bg-secondary-300  font-light js-show-on-scroll">
+      <!-- localconnect -->
+      <div class="bg-lcPrim">
+            <div class="section  text-lcSec">
+                  <div class="col-span-4 col-start-3 row-start-1 row-span-6 m-auto max-w-md my-32">
+                        <img src="src/img/z-cover.gif"></img>
+                  </div>
+                  <div class="info row-start-2" x-intersect="$el.classList.add('fadeInUp')">
+                        <h1 class="titel">Description</h1>
+                        <p >Using design thinking to help solve the needs of the growing population of elderly people in Botkyrka municipality.</p>
+                  </div>
+                  <div class="info row-start-3" x-intersect="$el.classList.add('fadeInUp')">
+                        <h1 class="titel">Method</h1>
+                        <p>Working with multiple steps of design thinking using the double diamond process to thoroughly understand specific needs.</p>
+                  </div>
+                  <div class="info row-start-4 font-semibold" x-intersect="$el.classList.add('fadeInUp')">
+                        <h1 class="titel">Skills</h1>
+                        <ul>
+                              <li>XD</li>
+                              <li>Design Thinking</li>
+                              <li>Illustrator</li>
+                        </ul>
+                      
+                  </div>
+                  <div class="info row-start-5" x-intersect="$el.classList.add('fadeInUp')">
+                        <h1 class="titel">Client</h1>
+                        <p>Botkyrka municipality</p>
+                  </div>
+                  <div class="col-span-4 col-start-3 row-start-7 m-auto max-w-md " x-intersect="$el.classList.add('fadeInUp')">
+                        <img src="src/img/OK hand.png"></img>
+                  </div>
+                  <div class="col-span-full row-start-7 flex self-center justify-center  z-20" x-intersect="$el.classList.add('fadeInUp')">
+                        <div>
+                              <h1 class="text-7xl md:text-9xl">Case Study</h1>
+                              <p>Using Design Thinking</p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <div class="bg-lcPrim">
+            <div class="section space-y-14 text-lcSec">
+                  <div class="infoLC col-start-1 row-start-1 md:col-start-2">
+                        <h1 class="titel">Descover</h1>
+                        <p >It's a hug, Michael. I'm hugging you. I'm afraid I just blue myself. I've opened a door here that I regret. That's why you always leave a note! It's called 'taking advantage.' It's what gets you ahead in life.</p>
+                  </div>
+                  <div class="col-span-3 col-start-6 row-start-1  z-20 md:col-span-2 md:col-start-7" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/elderlyHome.png" class="img"></img>
+                  </div>
+                  <div class="col-span-3 col-start-6 row-start-1  z-10 md:col-span-2 md:col-start-5">
+                        <img src="src/img/localConnect/postIt.png" class="img mt-40 -ml-20" x-intersect="$el.classList.add('scale')"></img>
+                  </div>
+         
+                  <div class="infoLC col-start-4 row-start-2 md:col-start-5 z-20" x-intersect="$el.classList.add('fadeInUp')">
+                        <h1 class="titel ">Define</h1>
+                        <p>It's a hug, Michael. I'm hugging you. I'm afraid I just blue myself. I've opened a door here that I regret. That's why you always leave a note! It's called 'taking advantage.' It's what gets you ahead in life.</p>
+                  </div>
+                  <div class="col-span-3 col-start-5 row-start-2 z-10 md:col-start-6" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/groupDemografy.png" class="img mt-60"></img>
+                  </div>
 
-  <!-- navigation -->
-  <main>
-    <div class="select-none cursor-default absolute   overlay z-20" id="overlay"> </div>
+                  <div class="col-span-5  col-start-1  row-start-2 z-10 md:col-span-4 md:col-start-2" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/group.png" class="sm:-ml-14"></img>
+                  </div>
 
-    <!-- About -->
-    <section id="about" class="flex mb-24 ">
-      <!--Left-->
-      <div class="w-1/4 ">
-        <div class="flex justify-center">
-          <h1 class="text-gray-100 text-6xl font-bold  ml-48 origin-left   transform rotate-90  z-20">
-            Bååth.
-          </h1>
-        </div>
+
+                  <div class="infoLC col-start-1 row-start-3 md:col-start-2" x-intersect="$el.classList.add('fadeInUp')" x-intersect="$el.classList.add('scale')">
+                        <h1 class="titel">Develop</h1>
+                        <p>It's a hug, Michael. I'm hugging you. I'm afraid I just blue myself. I've opened a door here that I regret. That's why you always leave a note! It's called 'taking advantage.' It's what gets you ahead in life.</p>
+                  </div>
+                  <div class="col-span-4 col-start-6  row-start-3  z-20 md:col-span-3 md:col-start-5" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/workshop1.png" class="img"></img>
+                  </div>
+                  <div class="col-span-2 col-start-6 row-start-3  z-10 md:col-span-1 md:col-start-8" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/workshop2.png" class="img mt-56 -ml-12"></img>
+                  </div>
+                  <div class="col-span-6 col-start-2 row-start-4 md:col-span-4" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/findings.png" class="img"></img>
+                  </div>
+                  <div class="col-span-3 col-start-6 row-start-4  z-10 md:col-span-2 md:col-start-6" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/lowfi.png" class="img mt-20"></img>
+                  </div>
+
+
+                  <div class="infoLC row-start-6 col-start-4 md:col-start-5">
+                        <h1 class="titel ">Deliver</h1>
+                        <p>It's a hug, Michael. I'm hugging you. I'm afraid I just blue myself. I've opened a door here that I regret. That's why you always leave a note! It's called 'taking advantage.' It's what gets you ahead in life.</p>
+                  </div>
+                  <div class="col-span-6 col-start-2 row-start-6 flex space-x-6 justify-center"> 
+                        <div><img src="src/img/localConnect/lc1.png" class="img mt-60"></img></div>
+                        <div> <img src="src/img/localConnect/lc2.png" class=" img mt-60"></img> </div>
+                       <div><img src="src/img/localConnect/lc3.png" class=" img mt-60"></img></div>
+                  </div>
+                  <div class="col-span-4 col-start-1 row-start-7 z-20 md:col-span-3 md:col-start-1" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/broshyr1.png" class="img "></img>
+                  </div>
+                  <div class="col-span-6 col-start-3 row-start-7 z-10 md:col-span-5 md:col-start-4 mb-" x-intersect="$el.classList.add('scale')">
+                        <img src="src/img/localConnect/broshyr2.png" class="img mt-14 pb-56"></img>
+                  </div>
+            </div>
+      </div>
+
+      <!-- UI Challange -->
+      <div class="bg-uiPrim">
+      <div class="section  text-uiSec py-40 ">
+            <div class="info row-start-3" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Description</h1>
+                  <p>Designing a new ui, or element, every day for 100 days. My own playground for trying out different styles and ideas, as well as getting familiar with Figma.</p>
+            </div>
+            <div class="info row-start-4" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Method</h1>
+                  <p>Exclusively using Figma and it’s plugins.</p>
+            </div>
+            <div class="info row-start-5" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Skills</h1>
+                  <p>Figma</p>
+            </div>
+            <div class="info row-start-6 mb-24" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="text-2xl">Client</h1>
+                  <p>Self initiated.</p>
+            </div>
+            <div class="col-span-8 row-start-1 row-span-2 flex justify-center self-center relative h-12 my-80 z-50" id="block">
+                  <img src="src/img/uichallange/q018.png" class="img">
+                  <img src="src/img/uichallange/q019.png" class="img">
+                  <img src="src/img/uichallange/q020.png" class="img">
+                  <img src="src/img/uichallange/q021.png" class="img">
+                  <img src="src/img/uichallange/q022.png" class="img">
+                  <img src="src/img/uichallange/q026.png" class="img">
+                  <img src="src/img/uichallange/q027.png" class="img">
+                  <img src="src/img/uichallange/q028.png" class="img">
+                  <img src="src/img/uichallange/q029.png" class="img">
+                  <img src="src/img/uichallange/q030.png" class="img">
+                  <img src="src/img/uichallange/q031.png" class="img">
+                  <img src="src/img/uichallange/q032.png" class="img">
+                  <img src="src/img/uichallange/q033.png" class="img">
+                  <img src="src/img/uichallange/q034.png" class="img">
+                  <img src="src/img/uichallange/q035.png" class="img">
+                  <img src="src/img/uichallange/q036.png" class="img">
+                  <img src="src/img/uichallange/q037.png" class="img">
+                  <img src="src/img/uichallange/q038.png" class="img">
+                  <img src="src/img/uichallange/q039.png" class="img">
+                  <img src="src/img/uichallange/q040.png" class="img">
+                  <img src="src/img/uichallange/q041.png" class="img">
+                  <img src="src/img/uichallange/q042.png" class="img">
+                  <img src="src/img/uichallange/q043.png" class="img">
+                  <img src="src/img/uichallange/q044.png" class="img">
+                  <img src="src/img/uichallange/q045.png" class="img">
+                  <img src="src/img/uichallange/q046.png" class="img">
+                  <img src="src/img/uichallange/q047.png" class="img">
+                  <img src="src/img/uichallange/q048.png" class="img">
+                  <img src="src/img/uichallange/q049.png" class="img">
+                  <img src="src/img/uichallange/q050.png" class="img">
+                  <img src="src/img/uichallange/q051.png" class="img">
+                  <img src="src/img/uichallange/q052.png" class="img">
+                  <img src="src/img/uichallange/q053.png" class="img">
+                  <img src="src/img/uichallange/q054.png" class="img">
+                  <img src="src/img/uichallange/q055.png" class="img">
+                  <img src="src/img/uichallange/q057.png" class="img">
+                  <img src="src/img/uichallange/q058.png" class="img">
+                  <img src="src/img/uichallange/q059.png" class="img">
+                  <img src="src/img/uichallange/q060.png" class="img">
+                  <img src="src/img/uichallange/q061.png" class="img">
+                  <img src="src/img/uichallange/q062.png" class="img">
+                  <img src="src/img/uichallange/q063.png" class="img">
+                  <img src="src/img/uichallange/q064.png" class="img">
+                  <img src="src/img/uichallange/q065.png" class="img">
+                  <img src="src/img/uichallange/q067.png" class="img">
+                  <img src="src/img/uichallange/q068.png" class="img">
+                  <img src="src/img/uichallange/q070.png" class="img">
+                  <img src="src/img/uichallange/q071.png" class="img">
+                  <img src="src/img/uichallange/q072.png" class="img">
+                  <img src="src/img/uichallange/q073.png" class="img">
+                  <img src="src/img/uichallange/q074.png" class="img">
+                  <img src="src/img/uichallange/q075.png" class="img">
+                  <img src="src/img/uichallange/q076.png" class="img">
+                  <img src="src/img/uichallange/q077.png" class="img">
+                  <img src="src/img/uichallange/q078.png" class="img">
+                  <img src="src/img/uichallange/q079.png" class="img">
+                  <img src="src/img/uichallange/q080.png" class="img">
+                  <img src="src/img/uichallange/q081.png" class="img">
+                  <img src="src/img/uichallange/q082.png" class="img">
+                  <img src="src/img/uichallange/q083.png" class="img">
+                  <img src="src/img/uichallange/q084.png" class="img">
+                  <img src="src/img/uichallange/q086.png" class="img">
+                  <img src="src/img/uichallange/q087.png" class="img">
+                  <img src="src/img/uichallange/q088.png" class="img">
+                  <img src="src/img/uichallange/q089.png" class="img">
+                  <img src="src/img/uichallange/q090.png" class="img">
+                  <img src="src/img/uichallange/q091.png" class="img">
+                  <img src="src/img/uichallange/q092.png" class="img">
+                  <img src="src/img/uichallange/q093.png" class="img">
+                  <img src="src/img/uichallange/q094.png" class="img">
+                  <img src="src/img/uichallange/q095.png" class="img">
+                  <img src="src/img/uichallange/q096.png" class="img">
+                  <img src="src/img/uichallange/q097.png" class="img">
+                  <img src="src/img/uichallange/q098.png" class="img">
+                  <img src="src/img/uichallange/q099.png" class="img">
+                  <img src="src/img/uichallange/q100.png" class="img">
+            </div>
+      </div>
+      </div>
+
+      <!-- Teenage Engineering -->
+      <div class="bg-tePrim">
+       <div class="section  text-tesec md:overflow-hidden">
+            <div class="col-span-full flex justify-center z-50" x-intersect="$el.classList.add('fadeInDown')">
+                  <img src="src/img/TE/teAnimation.gif" class="-mt-40"></img>
+            </div>
+            <div class="info row-start-2  z-10" x-intersect="$el.classList.add('fadeDownDelay')">
+                  <h1 class="titel">Description</h1>
+                  <p>Developing a working prototype of orthoplay for Apple Watch. <a href="https://teenage.engineering/products/orthoplay" class="hover:text-gray-300">[Orthoplay]</a> is an application for smartphones that control Teenage Engineering’s speaker <a href="https://teenage.engineering/products/od-11" class="hover:text-gray-300">[OD-11]</a></p>
+            </div>
+            <div class="info row-start-3 z-10" x-intersect="$el.classList.add('fadeDownDelay')">
+                  <h1 class="titel">Method</h1>
+                  <p>The agile method SCRUM was used throughout the project between four students. An API was developed in order to receive and send data from the watch to the Orthoplay app that was installed on the Iphone. Both low/high-fi prototypes were created and tested before being implemented.</p>
+            </div>
+            <div class="info row-start-4 z-10" x-intersect="$el.classList.add('fadeDownDelay')">
+                  <h1 class="titel">Skills</h1>
+                  <ul>
+                        <li>Swift</li>
+                        <li>XD</li>
+                        <li>Illustrator</li>
+                        <li>SCRUM</li>
+                  </ul>
+            </div>
+            <div class="info row-start-5 mb-24 z-10" x-intersect="$el.classList.add('fadeDownDelay')">
+                  <h1 class="text-2xl">Client</h1>
+                  <p>
+                  <a href="https://teenage.engineering/" class="hover:text-gray-300">[Teenage Engineering]</a>
+                  </p>
+            </div>
+            <div class="col-span-5 col-start-1 row-start-6">
+                  <img src="src/img/TE/stereo.png" class="img"></img>
+            </div>
+            <div class="col-span-5 row-start-6 col-start-4 mt-12 " x-intersect="$el.classList.add('fadeInUp')">
+                  <p>Teenage Engineering OD-11 speaker.</p>
+            </div>
+            <div class="col-span-5 col-start-4 row-start-6 mt-36" >
+                  <img src="src/img/TE/remote.jpg" class="img"></img>
+                  <p>Physical volume control for the OD-11 speaker.</p>
+            </div>
+            <div class="col-span-3 col-start-2 row-start-7 mt-36">
+                  <img src="src/img/TE/lowfi.png" class="rounded-lg "></img>
+            </div>
+            <div class="col-span-full mb-48" x-intersect="$el.classList.add('scale')">
+                  <img src="src/img/TE/settings.png" class="img "></img>
+                  <p>Bass/Trabble/Colorwheel/Airplay control menu on the AppleWatch.
+                        </p>
+            </div>
+            <div class="col-span-3 col-start-5 row-start-7 mt-36 flex self-center" x-intersect="$el.classList.add('fadeInUp')">
+                  <p>Low-fi prototype of the UI, used for conducting  User Tests in early stages of development.
+                  </p>
+            </div>
+      </div>
+      </div>
+
+      <!-- Papahana -->
+      <div class="bg-papaPrim">
+      <div class="section  text-papasec text-border py-44">
+            <div class="col-span-6  row-start-1 col-start-2 md:col-span-4 md:col-start-3">
+                  <img src="src/img/papahana/papahana-cover.gif" x-intersect="$el.classList.add('fadeInUp')"></img>
+            </div>
+            <div class="col-span-2 col-start-4 flex justify-center row-start-2 md:col-span-full" x-intersect="$el.classList.add('scale')">
+                  <img src="src/img/papahana/ball.png"></img>
+                  <img src="src/img/papahana/cook.png"></img>
+                  <img src="src/img/papahana/dnd.png"></img>
+                  <img src="src/img/papahana/climb.png"></img>
+                  <img src="src/img/papahana/fencing.png"></img>
+                  <img src="src/img/papahana/golf.png"></img>
+            </div>
+            <div class="info row-start-3" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Description</h1>
+                  <p>Design and implemention of a social media platform for finding new friends. Post an activity or explore, swipe and match with likeminded people, make friends through activities.</p>
+            </div>
+            <div class="info row-start-4" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Method</h1>
+                  <p>The prototype was implemented as a full stack web application. A business model was made together with a competitor analysis, while keeping user integrity in mind. The UI was implemented after creating and testing low-fi prototypes on six participants. The website was hosted on Heroku with Node.js and MongoDb as database, including protected user profiles. React was used as a framework for frontend.</p>
+            </div>
+            <div class="info row-start-5" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Skills</h1>
+                  <ul>
+                        <li>Mongodb/DOM</li>
+                        <li>Node.js</li>
+                        <li>React</li>
+                        <li>SCRUM</li>
+                  </ul>
+            </div>
+            <div class="info row-start-6 mb-24" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Client</h1>
+                  <p>Social media technology course - Umeå University</p>
+            </div>
+
+
+
+            <div  class="row-start-7 col-span-6 col-start-2 flex justify-center space-x-6" x-intersect="$el.classList.add('scale')">
+                 
+                  <div><img src="src/img/papahana/profile.png" class="img"></img>
+                        <p >Home profile for a user.</p></div>
+                       <div><img src="src/img/papahana/add.png" class="img"></img>
+                        <p>Filter activities by interest.</p></div>
+                        <div><img src="src/img/papahana/channels.png" class="img"></img>
+                              <p>Create an activity.</p></div>
+            </div>
+
+
+<!-- 
+            <div class="col-span-3 col-start-1 row-start-7 md:col-span-2" x-intersect="$el.classList.add('fadeInUp')">
+                  <img src="src/img/papahana/profile.png" class="img"></img>
+                  <p >Home profile for a user.</p>
+            </div>
+            <div class="col-span-3 col-start-3 row-start-7 -mt-12 md:col-span-2 md:col-start-4 z-20" x-intersect="$el.classList.add('fadeInUp')">
+                  <img src="src/img/papahana/add.png" class="img"></img>
+                  <p>Filter activities by interest.</p>
+            </div>
+            <div class="col-span-3 col-start-6 row-start-7 md:row-start-7 md:col-span-2 md:col-start-7 z-10" x-intersect="$el.classList.add('fadeInUp')">
+                  <img src="src/img/papahana/channels.png" class="img"></img>
+                  <p>Create an activity.</p>
+            </div> -->
+      </div>
       </div>
 
 
-
-      <div class="grid grid-cols-2 sm:grid-cols-4  gap-12 mt-10 mr-8 text-base   z-30">
-
-        <div class="col-span-2  lg:col-span-1">
-          <h3 class="text-gray-100 leading-10  text-2xl ">Well hello there<h3>
-              <span>
-                My name is Martin Bååth and i'm a user experience designer: Striving to make the world around me a bit more enjoyable place to live in – one user test at a time ;)
-              </span>
-        </div>
-        <div class="col-span-2 lg:col-span-1 mr-6">
-          <h3 class="text-gray-100 leading-10  text-2xl">Experience<h3>
-              <span>
-                Studied Art in Stockholm and M.sc Interaction & Design at Umeå University.
-              </span>
-        </div>
-        <div class="col-span-2 lg:col-span-1">
-          <h3 class="text-gray-100 leading-10 text-2xl">Skills</h3>
-          <ul>
-            <li>XD</li>
-            <li>Figma</li>
-            <li>Illustrator</li>
-            <li>C</li>
-            <li>Java</li>
-            <li>Phyton</li>
-            <li>Full stack</li>
-            <li>Swift</li>
-            <li>Arduino</li>
-          </ul>
-        </div>
-        <div class="col-span-2 lg:col-span-1  mr-8">
-          <h3 class="text-gray-100 leading-10 text-2xl">Contact<h3>
-              <ul>
-                <li>
-                  <a href="linkedin.com/in/martin-bååth-3160a817b" class="hover:text-black hover:bg-white">[LinkedIn]</a>
-                </li>
-                <li>
-                  <a href="mailto:martinbaath@gmail.com" class="hover:text-black hover:bg-white">[Email]</a>
-                </li>
-
-                <li>
-                  <a href="cv.pdf" class="hover:text-black hover:bg-white">[CV]</a>
-                </li>
-              </ul>
-        </div>
-
-
-
-
-        <!-- <div class="font-bold text-blue-500 py-32" id="app" style="font: 12px monospace; line-height:14px; height:435px;"></div> -->
-
+      <!-- Gainer -->
+      <div class="bg-gainerPrim">
+      <div class="section  text-green-500 text-border py-40">
+            <div class="info row-start-2" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Description</h1>
+                  <p>A game where the user receives points/gains by letting an avatar perform a fitness activity on screen. The points/gains lets the user buy resources like supplements and food in order to get stronger and thus be able to perform better. How much gains can you get? The sky is the limit….</p>
+            </div>
+            <div class="info row-start-3" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Method</h1>
+                  <p>Creating a database keeping track of user profiles and their progress.</p>
+            </div>
+            <div class="info row-start-4" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Skills</h1>
+                  <ul>
+                        <li>DOM/MVC</li>
+                        <li>Java</li>
+                        <li>HTML/CSS/JS</li>
+                        <li>Illustrator</li>
+                  </ul>
+            </div>
+            <div class="info row-start-5" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Client</h1>
+                  <p>Web Technology for Engineers - Umeå University</p>
+            </div>
+            <div class="col-span-full row-span-3 row-start-4 col-start-5 sm:-mr-48  md:col-start-5 md:col-span-5  z-20" x-intersect="$el.classList.add('scale')">
+                  <img src="src/img/flex.png"></img>
+            </div>
+            <div class="col-span-full  row-start-7 z-10 m-auto">
+                  <img src="src/img/gainer.gif" class="img"></img>
+                  <p>Displaying the game in action - currently using a temporary boost for eatch additional click/repetition.</p>
+            </div>
+      </div>
+      </div>
+      <!-- Brattfors -->
+      <div class="bg-brattPrim">
+      <div class="section  text-brattsec text-border" >
+            <div class="info mt-48" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Description</h1>
+                  <p>Design car decal with an additional print instruction placed on a car, Volvo V70</p>
+            </div>
+            <div class="info" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Method</h1>
+                  <p>A brief research of the clients expectations, their audience and previous graphic profile. Later a brainstorming and a visual exploration was conducted. Three final concept refinements were shown to the client to choose from. Some refinement of the chosen design was then made before the final print instructions.</p>
+            </div>
+            <div class="info" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Skills</h1>
+                  <p>Illustrator</p>
+            </div>
+            <div class="info mb-24" x-intersect="$el.classList.add('fadeInUp')">
+                  <h1 class="titel">Client</h1>
+                  <p><a href="https://krigsflygfält16.se/" class="hover:text-gray-400">[Stiftelsen Krigsflygfält 16]
+                  </a></p>
+            </div>
+            <div class="col-span-3 -ml-14 row-start-6" x-intersect="$el.classList.add('scale')">
+                  <img src="src/img/brattfors/brattfors-cover.png" class="img"></img>
+            </div>
+            <div class="col-span-3 col-start-4 row-start-6 md:col-span-2 " >
+                  <p>Three different concepts was presented to the client.</p>
+            </div>
+            <div class="col-span-2 row-start-7 flex self-center">
+                  <p>The chosen design and it's print instrcutions.</p>
+            </div>
+            <div class="col-span-6 col-start-3 row-start-7 -mr-14 -mt-52 mb-48" x-intersect="$el.classList.add('scale')">
+                  <img src="src/img/brattfors/BF3.png" class="img"></img>
+            </div>
+      </div>
       </div>
 
-
-      </header>
-    </section>
-
-    <!-- Work -->
-
-
-    <section class="grid grid-cols-4 text-xs pb-32 lg:mt-64 ">
-      <!-- Left -->
-      <div class="col-span-1">
-        <div class="flex justify-center ">
-          <div class="text-lg ml-16  font-bold origin-left transform rotate-90">
-            <h1>Work.</h1>
-          </div>
-        </div>
+      <!-- Footer -->
+      <div class="bg-footerPrim">
+      <div class="section text-footerSec py-32">
+              <div class="pointer-events-none select-none row-start-1 row-span-4 md:col-start-5" id="app" style="font: 14px monospace; line-height:16px; height:435px;"></div> 
+              <!-- <div class="info row-start-">
+                  <h1 class="text-6xl bg-footerhighlight ">Martin Bååth</h1>
+            </div> -->
+           <div class="info row-start-3 font-mono">
+                  <h1 class="text-2xl hover:bg-footerhighlight"><a href="mailto:martinbaath@gmail.com">> Mail</a></h1>
+                  <h1 class="text-2xl hover:bg-footerhighlight"><a href="https://se.linkedin.com/in/martin-bååth-3160a817b" >> LinkedIn</a></h1>
+                  <h1 class="text-2xl hover:bg-footerhighlight"><a href="src/CV-MartinBååth.pdf" >> CV</a></h1>
+            </div>
+          
       </div>
-      <!--Right-->
-      <div id="work" class="col-span-3 row-start-auto mr-4">
-        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-
-            <a href="brattforsCar.html">
-              <img src="public/img/work/brattfors-cover.png" alt="stew" class="workImg"></img>
-            </a>
-          </div>
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-            <a href="orthoplay.html" class="transform hover:underline">
-              <img src="public/img/work/teanimation.gif" alt="stew" class=" workImg"></img>
-              <!-- <video src="public/img/work/teanimation.mov" preload="auto" autoplay="" loop="" type="video/quicktime" webkit-playsinline="" class="workImg"></video> -->
-            </a>
-          </div>
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-            <a href="papahana.html" class="transform hover:underline">
-              <img src="public/img/work/papahana-cover.gif" alt="stew" class=" workImg"></img>
-
-              <!-- <video src="public/img/work/papahana-cover.mov" preload="auto" autoplay="" loop="" type="video/quicktime" webkit-playsinline="" class="workImg"></video> -->
-            </a>
-          </div>
-          <!-- Repeat -->
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-            <a href="pinchy.html" class="transform hover:underline">
-              <img src="public/img/work/pinchy-cover.png" alt="stew" class=" workImg"></img>
-            </a>
-          </div>
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
-            <a href="ubiquitouscomputing.html" class="transform hover:underline">
-              <img src="public/img//work/uc-cover.png" alt="stew" class="workImg"></img>
-            </a>
-            <div class="">
-            </div>
-          </div>
-
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-101">
-            <a href="localconnect.html" class="transform hover:underline">
-              <img src="public/img//work/z-cover.gif" alt="stew" class="workImg"></img>
-            </a>
-            <div class="">
-            </div>
-          </div>
-
-
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-            <a href="uichallange25.html" class="transform hover:underline">
-              <img src="public/img/work/uichallange-cover.png" alt="stew" class=" workImg"></img>
-            </a>
-          </div>
-
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-            <a href="gainers.html" class="transform hover:underline">
-              <img src="public/img/work/gainers/demo.gif" alt="stew" class=" workImg"></img>
-              <!-- <video src="public/img/work/gainers/demo.mov" preload="auto" autoplay="" loop="" type="video/quicktime" webkit-playsinline="" class="workImg"></video> -->
-
-              <!-- <img src="public/img/work/gainers-cover.png" alt="stew" class=" workImg"></img> -->
-            </a>
-          </div>
-
-
-          <div class="card transition duration-500 ease-in-out  transform  hover:scale-102">
-            <a href="timeperception.html" class="transform hover:underline">
-              <img src="public/img/work/perception-cover.png" alt="My Happy SVG" class="workImg"></img>
-            </a>
-          </div>
-
-          </object>
-        </div>
       </div>
-    </section>
-    <!-- scrabble -->
-    <section class="grid grid-cols-4 text-xs font-light py-32">
-      <!-- Left -->
-      <div class="col-span-1 ">
-        <div class="flex justify-center ">
-          <div class="text-lg ml-16 font-bold origin-left transform rotate-90">
-            <h1>Scrabble.</h1>
-          </div>
-        </div>
-      </div>
-      <!--Right-->
-      <!-- <div class="select-none   text-gray-500 z-20" id="app" style="font: 12px monospace; line-height:14px;">
-      </div> -->
-
-
-      <div class="col-span-3 mr-8  text-gray-400  js-show-on-scroll uppercase">
-        <div class=" grid grid-cols-1 sm:grid-cols-2 gap-8 font-light text-sm">
-
-          <div class="card">
-            <div class="-m-2  origin-left transform rotate-90">
-              <h2>Ermir - Clay</h2>
-            </div>
-            <img src="public/img//scrabble/ermir.png" alt="stew" class="workImg"></img>
-          </div>
-
-
-          <div class="card">
-            <div class=" -m-2 origin-left transform rotate-90">
-              <h2>Pride - Illustrator </h2>
-            </div>
-            <img src="public/img/scrabble/pride.png" alt="stew" class="workImg"></img>
-          </div>
-
-          <!-- <div class="card">
-            <div class="-m-2  origin-left transform rotate-90">
-              <h2>Bild the wall - Illustrator </h2>
-            </div>
-            <img src="public/img/scrabble/buildthewall.png" alt="stew" class="workImg"></img>
-          </div> -->
-
-          <div class="card">
-            <div class="-m-2 origin-left transform rotate-90">
-              <h2>Glasses - Illustrator </h2>
-            </div>
-            <img src="public/img/scrabble/glasses.png" alt="stew" class="workImg"></img>
-          </div>
-
-          <div class="card">
-            <div class="text-sm  -m-2 origin-left transform rotate-90">
-              <h2>Self portrait - unicode graphic </h2>
-            </div>
-            <img src="public/img/scrabble/selfpotrait.gif" alt="stew" class="workImg"></img>
-          </div>
-
-          <div class="card transition duration-500 ease-in-out ">
-            <div class="-m-2 origin-left transform rotate-90 ">
-              <h2>Kid play - Oil on canvas</h2>
-            </div>
-            <img src="public/img/scrabble/kids.png" alt="stew" class="workImg"></img>
-          </div>
-
-          <div class="card">
-            <div class="-m-2 origin-left transform rotate-90">
-              <h2>64 - Illustrator </h2>
-            </div>
-            <img src="public/img/scrabble/64.png" alt="stew" class="workImg"></img>
-          </div>
-
-
-          <div class="card">
-            <div class="-m-2 origin-left transform rotate-90">
-              <h2>Pizza - Illustrator </h2>
-            </div>
-            <img src="public/img/scrabble/pizza.png" alt="stew" class="workImg"></img>
-          </div>
-
-          <div class="card">
-            <div class="text-sm -m-3 origin-left transform rotate-90 ">
-              <h2>Lady - Plaster</h2>
-            </div>
-            <img src="public/img//scrabble/lady.png" alt="stew" class="workImg">
-            </img>
-          </div>
-
-          <div class="card">
-            <div class="text-sm  -m-2  origin-left transform rotate-90">
-              <h2>Golden Section - Illustrator </h2>
-            </div>
-            <img src="public/img/scrabble/goldensection.png" alt="stew" class="workImg"></img>
-          </div>
-
-          <div class="card transition  duration-500 ease-in-out  transform  hover:scale-102">
-            <div class="text-sm -m-2 origin-left transform rotate-90">
-              <h2>oops - Motion design</h2>
-            </div>
-            <div id="bm" class="workImg ">
-            </div>
-          </div>
-
-          <!-- <div class="card">
-            <div class="text-sm  -m-2 origin-left transform rotate-90">
-              <h2>Zug Zug - Illustrator </h2>
-            </div>
-            <img src="public/img/scrabble/zugzug.png" alt="stew" class="workImg"></img>
-          </div> -->
-
-          <div class="card">
-            <div class="text-sm  -m-2 origin-left transform rotate-90">
-              <h2>lady - grafik </h2>
-            </div>
-            <img src="public/img/scrabble/ladyinblack.png" alt="stew" class="workImg"></img>
-          </div>
-          <!-- Repeat -->
-
-        </div>
-      </div>
-
-
-    </section>
-
-    <footer class="grid grid-cols-4  mb-16">
-      <div class="col-span-1">
-
-      </div>
-      <div class="col-span-3 mr-8 sm:mr-24 ">
-        <div class="border-t border-gray-800 py-6 text-base">
-          <ul>
-            <li>
-              Martin Bååth.
-            </li>
-            <li>
-              <a href="https://se.linkedin.com/in/martin-bååth-3160a817b" class="hover:text-black hover:bg-white">[LinkedIn]</a>
-            </li>
-            <li>
-              <a href="mailto:martinbaath@gmail.com" class="hover:text-black hover:bg-white">[Email]</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <!-- Grid end -->
-
-  </main>
-
-  <script type="text/javascript" src="public/lottie.js"></script>
-  <script type="text/javascript" src="public/typeWriter.js"></script>
-
 </body>
-
-
-
+<script type="text/javascript" src="dist/myJS.js"></script>
 </html>
+

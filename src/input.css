@@ -1,0 +1,105 @@
+p, ul {
+      font-weight: 500
+}
+
+div h1{
+      font-weight: 700;
+      margin: 0px 0px 4px 0px; 
+}
+
+#block img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+      .section {
+        @apply grid grid-cols-8 gap-8 p-8 overflow-hidden sm:max-w-screen-xl m-auto; 
+      }
+      .info {
+          @apply col-span-6 col-start-2 md:col-span-4 md:col-start-3  z-50;
+      }
+      .infoLC{
+            @apply col-span-5 md:col-span-3;
+      }
+
+      .titel{
+            @apply text-2xl md:text-3xl;
+      }
+
+      .p {
+            @apply md:text-lg;
+      }
+      .img {
+            @apply rounded-md shadow-md ;
+      }
+
+    }
+@layer utilities {
+      @keyframes fadeInUp {
+            0% {
+                  opacity: 0;
+                  transform: translateY(50%);
+            }
+            100% {
+                  opacity: 1;
+                  transform: translateY(0);
+            }
+      }
+      .fadeInUp {
+            animation: fadeInUp 0.8s;
+      }
+
+      @keyframes fadeInDown {
+            0% {
+                  transform: translateY(-200%);
+            }
+            100% {
+                  transform: translateY(0);
+            }
+      }
+      .fadeInDown {
+            animation: fadeInDown 0.8s;
+      }
+      @keyframes fadeDownDelay {
+            0% {
+                  transform: translateY(-50%);
+            }
+            100% {
+                  transform: translateY(0);
+            }
+      }
+      .fadeDownDelay {
+            animation: fadeInDown 0.8s;
+      }
+      @keyframes scale {
+            0% {
+                  opacity: 0;
+                  transform: scale(0.8);
+            }
+            100% {
+                  opacity: 1;
+                  transform: scale(1);
+            }
+      }
+      .scale {
+            animation: scale 1s;
+      }
+    
+      .fadeInUp {
+            animation: fadeInUp 0.8s;
+      }
+      @media (prefers-reduced-motion) {
+            .fadeInUp,
+            .scale {
+                  animation: none;
+            }
+      }
+  }
