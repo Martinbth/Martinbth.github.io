@@ -11,6 +11,10 @@ div h1{
   position:absolute;
   top: 0;
   left: 0;
+  max-width:736px;
+  max-height:414px;
+  width: auto;
+  height: auto;
   /* height: 100px;
   width: 100px; */
 }
@@ -621,20 +625,16 @@ video {
   grid-column: span 5 / span 5
 }
 
-.col-span-6 {
-  grid-column: span 6 / span 6
-}
-
 .col-span-8 {
   grid-column: span 8 / span 8
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2
+.col-span-6 {
+  grid-column: span 6 / span 6
 }
 
-.col-span-7 {
-  grid-column: span 7 / span 7
+.col-span-2 {
+  grid-column: span 2 / span 2
 }
 
 .col-start-1 {
@@ -755,8 +755,8 @@ video {
   margin-bottom: 6rem
 }
 
-.-mt-40 {
-  margin-top: -10rem
+.-mt-28 {
+  margin-top: -7rem
 }
 
 .mt-12 {
@@ -777,30 +777,6 @@ video {
 
 .-mr-14 {
   margin-right: -3.5rem
-}
-
-.-mt-52 {
-  margin-top: -13rem
-}
-
-.-mt-44 {
-  margin-top: -11rem
-}
-
-.-mt-64 {
-  margin-top: -16rem
-}
-
-.-mt-60 {
-  margin-top: -15rem
-}
-
-.-mt-32 {
-  margin-top: -8rem
-}
-
-.-mt-28 {
-  margin-top: -7rem
 }
 
 .block {
@@ -1036,20 +1012,6 @@ video {
   animation: fadeInDown 0.8s;
 }
 
-@keyframes fadeDownDelay {
-  0% {
-    transform: translateY(-50%);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.fadeDownDelay {
-  animation: fadeInDown 0.8s;
-}
-
 @keyframes scale {
   0% {
     opacity: 0;
@@ -1072,7 +1034,7 @@ video {
 
 @media (prefers-reduced-motion) {
   .fadeInUp,
-            .scale {
+            .scale,.fadeInDown {
     animation: none;
   }
 }
@@ -1197,10 +1159,6 @@ video {
 
   .md\:-mt-40 {
     margin-top: -10rem
-  }
-
-  .md\:mb-48 {
-    margin-bottom: 12rem
   }
 
   .md\:-mt-52 {

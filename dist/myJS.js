@@ -1,6 +1,6 @@
 jQuery(function(){
-  var transition_time = 200;
-  var waiting_time = 500;
+  var transition_time = 250;
+  var waiting_time = 400;
   var images = $('div#block img');
   var n = images.length;
   var current = 1;
@@ -16,8 +16,8 @@ jQuery(function(){
   
   //range of possible image scales
   var objectMaxHeight = 350;
-  var objectMinHeight = 300;
- 
+  var objectMinHeight = 200;
+
   var interval_id = setInterval(function () {
     // n = number of images
     // imgDisplayed = number of images imgDisplayed

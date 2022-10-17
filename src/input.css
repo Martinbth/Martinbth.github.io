@@ -11,6 +11,10 @@ div h1{
   position:absolute;
   top: 0;
   left: 0;
+  max-width:736px;
+  max-height:414px;
+  width: auto;
+  height: auto;
   /* height: 100px;
   width: 100px; */
 }
@@ -56,7 +60,6 @@ div h1{
       .fadeInUp {
             animation: fadeInUp 0.8s;
       }
-
       @keyframes fadeInDown {
             0% {
                   transform: translateY(-200%);
@@ -66,17 +69,6 @@ div h1{
             }
       }
       .fadeInDown {
-            animation: fadeInDown 0.8s;
-      }
-      @keyframes fadeDownDelay {
-            0% {
-                  transform: translateY(-50%);
-            }
-            100% {
-                  transform: translateY(0);
-            }
-      }
-      .fadeDownDelay {
             animation: fadeInDown 0.8s;
       }
       @keyframes scale {
@@ -98,7 +90,7 @@ div h1{
       }
       @media (prefers-reduced-motion) {
             .fadeInUp,
-            .scale {
+            .scale,.fadeInDown {
                   animation: none;
             }
       }
