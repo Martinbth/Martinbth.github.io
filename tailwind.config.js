@@ -15,10 +15,9 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: [
-          '"Helvetica Neue"',
+          '-apple-system',
           'Roboto',
           'sans-serif',
-          
         ],
       },
       colors: {

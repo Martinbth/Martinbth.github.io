@@ -1,9 +1,9 @@
 p, ul {
-      font-weight: 500
+      font-weight: 400
 }
 
 div h1{
-      font-weight: 700;
+      font-weight: 600;
       margin: 0px 0px 4px 0px; 
 }
 
@@ -28,21 +28,21 @@ div h1{
         @apply grid grid-cols-8 gap-8 p-8 overflow-hidden sm:max-w-screen-xl m-auto; 
       }
       .info {
-          @apply col-span-7 col-start-2 md:col-span-4 md:col-start-3  z-50;
+          @apply  z-50 col-span-7 col-start-2 md:col-span-4 md:col-start-3 ;
       }
       .infoLC{
             @apply col-span-5 md:col-span-3;
       }
 
       .titel{
-            @apply text-2xl md:text-3xl;
+            @apply text-xl md:text-2xl z-50;
       }
 
       .p {
             @apply md:text-lg;
       }
       .img {
-            @apply rounded-md shadow-md ;
+            @apply  shadow-md z-10;
       }
 
     }
