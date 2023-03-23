@@ -1,3 +1,32 @@
+// $(function(){
+//   $("#blog-placeholder").load("blogPosts.html");
+// });
+
+
+  $("#09-02-23").click(function(){
+    $.ajax({url: "09-02-23.html", success: function(result){
+      $("#blogContent").html(result);
+    }});
+  });
+  $("#10-02-23").click(function(){
+    $.ajax({url: "10-02-23.html", success: function(result){
+      $("#blogContent").html(result);
+    }});
+  });
+
+
+  
+  $('#tabs-nav li').click(function(){
+    $('#tabs-nav li').removeClass('active');
+    $(this).addClass('active');
+    $('.tab-content').hide();
+    
+    var activeTab = $(this).find('a').attr('href');
+    $(activeTab).fadeIn();
+    return false;
+  });
+  
+
 jQuery(function(){
   var transition_time = 250;
   var waiting_time = 400;
@@ -9,7 +38,6 @@ jQuery(function(){
   var firstImg = 0;
   images.hide();
   // images.eq(current).show();
-  
   //get the size of the container
   var boxHeight = document.getElementById('block').offsetHeight ;
   var boxWidth = document.getElementById('block').offsetWidth;
@@ -19,17 +47,6 @@ jQuery(function(){
   var objectMinHeight = 200;
 
   var interval_id = setInterval(function () {
-    // n = number of images
-    // imgDisplayed = number of images imgDisplayed
-    // firstImg = first image to be displayed
-
-    
-    // var n = images.length;
-    // var current = 1;
-    // var i = 10;
-    // var lap = 0;
-    // var firstImg = 0;
-
     if (current > n || lap > 0){ 
       if(current > n){ 
         lap++; 
@@ -111,8 +128,54 @@ jQuery(function(){
 //     console.log("in change img for:" + current);
 //     $domImage.fadeIn(transition_time); 
 //  }
+
 })
 
+
+
+var blogApp = document.getElementById('blogApp');
+var typewriter1 = new Typewriter(blogApp, {
+  loop: true,
+  delay:50,
+});
+typewriter1.typeString('Hello World!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('This is a space for me to gather my toughts')
+    .pauseFor(1000)
+    .typeString(', mostly about <strong>UX</strong>')
+    .pauseFor(2500)
+    .deleteChars(2)
+    .typeString('<strong>colors</strong>')
+    .pauseFor(2500)
+    .deleteChars(6)
+    .typeString('<strong>articles</strong>')
+    .pauseFor(2500)
+    .deleteChars(8)
+    .typeString('<strong>books</strong>')
+    .pauseFor(2500)
+    .deleteChars(5)
+    .typeString('<strong>games</strong>')
+    .pauseFor(2500)
+    .deleteChars(5)
+    .typeString('<strong>fonts</strong>')
+    .pauseFor(2500)
+    .deleteChars(5)
+    .typeString('<strong>navigation</strong>')
+    .pauseFor(2500)
+    .deleteChars(10)
+    .typeString('<strong>prototypes</strong>')
+    .pauseFor(2500)
+    .deleteChars(10)
+    .typeString('<strong>and more!</strong>')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+
+
+  
+
+   
 
 var app = document.getElementById('app');
 var typewriter = new Typewriter(app, {
@@ -126,3 +189,6 @@ typewriter
   .pauseFor(100)
 .start();
 
+
+  
+  

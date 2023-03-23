@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{html,js}"],
+  content: [ "./*.{html,js}"],
   theme: {
     borderRadius: {
       'none': '0',
@@ -37,6 +37,7 @@ module.exports = {
         footerPrim:'#0A1305',
         footerSec:"#7CCD54",
         footerhighlight:"#284619",
+        blogSec:"#55527c",
       },
     },
   },

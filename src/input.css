@@ -7,6 +7,20 @@ div h1{
       margin: 0px 0px 4px 0px; 
 }
 
+strong{
+      color: #de3b7c;
+}
+
+ul#tabs-nav li:hover,
+ul#tabs-nav li.active {
+  background-color: rgb(224, 224, 224);
+}
+
+.avatar {
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
 #block img{
   position:absolute;
   top: 0;
@@ -42,9 +56,35 @@ div h1{
             @apply md:text-lg;
       }
       .img {
-            @apply  shadow-md z-10;
+            @apply  z-10 rounded-lg;
+      }
+      .blogImg{
+            @apply  m-auto min-w-full  my-12 rounded-md shadow-2xl;  
       }
 
+      .blogPost{
+            @apply row-start-2 col-start-3 col-span-full md:col-start-4 md:col-span-4 mb-44 ;
+      }
+
+      .blogCite{
+            @apply italic border-l-4  px-8 my-8;
+      }
+      .blogTitel{
+            @apply text-3xl md:text-4xl mb-8 ;
+      }
+      .blogDate{
+            @apply font-mono  text-left text-gray-600;
+      }
+      /* Blog Navigation */
+      .blogNav{
+            @apply mt-56 col-span-2 col-start-1  md:w-4/6;
+      }
+      .navTxt{
+            @apply p-3 w-5/6 truncate text-left;
+      }
+      .active{
+            @apply bg-zinc-600 ;
+      }
     }
 @layer utilities {
       @keyframes fadeInUp {
@@ -92,6 +132,17 @@ div h1{
             .fadeInUp,
             .scale,.fadeInDown {
                   animation: none;
+            }
+      }
+      @keyframes float {
+            0% {
+                  transform: translatey(0px);
+            }
+            50% {
+                  transform: translatey(-20px);
+            }
+            100% {
+                  transform: translatey(0px);
             }
       }
   }

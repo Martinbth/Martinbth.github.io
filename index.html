@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0,viewport-fit=cover"> -->
-      <title>Document</title>
+      <title>Portfolio</title>
       <link href="./dist/output.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <!-- Alpine Plugins -->
@@ -18,18 +18,25 @@
 </head>
 <body x-data class="p">
       <a name="top"></a>
-      <div class="bg-startPrim pt-32 ">
+      <div class="bg-startPrim pt-32">
       <div class="section text-amber-100">
-            <div class="col-span-2 row-start-1 sticky">
-                  <h1 class="flex mt-4 md:mt-20 transform  rotate-90 text-7xl md:text-9xl font-black z-50 hover:mix-blend-difference ">
-                        <a href="#top">Bååth.</a>
+            <div class="row-span-2 row-start-1 col-start-1 col-span-2
+            ">
+                  <h1 class="flex justify-start mt-4 md:mt-20 rotate-90 m-auto">
+                        <a class="text-7xl md:text-8xl font-black" href="#top">Bååth.</a>
                   </h1>
             </div>
-            <div class="info row-start-1 col-start-3 " x-intersect="$el.classList.add('fadeInUp')">
+            <!-- <div class="row-start-3 col-start-1 col-span-2 transform hover:text-white
+            ">
+                  <h1 class="flex justify-center mt-4 md:justify-end rotate-90 ">
+                        <a class="titel " href="blog.html">Blog</a>
+                  </h1>
+            </div> -->
+            <div class="info row-start-1 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Well hello there</h1>
                   <p>My name is Martin Bååth and I am a user experience designer: Striving to make the world around me a bit more enjoyable place to live in – one user test at a time ;)</p>
             </div>
-            <div class="info row-start-2 col-start-3 md:-mt-20" x-intersect="$el.classList.add('fadeInUp')">
+            <div class="info row-start-2 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Experience</h1>
                   <p>Studied Art in Stockholm and M.sc Interaction & Design at Umeå University.</p>
             </div>
@@ -41,11 +48,14 @@
                               <li>Figma</li>
                               <li>Adobe Suite</li>
                               <li>C</li>
+                              <li>Java</li>
                         </ul>
                         <ul>
                               <li>Phyton</li>
                               <li>Swift</li>
                               <li>Full stack</li>
+                              <li>Asp.Net</li>
+                              <li>And more!</li>
                         </ul>
                   </div>
             </div>
@@ -57,7 +67,7 @@
                               <p class=" hover:text-gray-400"><a href="https://martinbth.github.io/src/CV-MartinBååth.pdf" >[CV]</a></p>
                         </div>
             </div>
-            <div class=" z-0 col-span-full col-start-1 row-span-4 row-start-2 sm:-mr-36 md:col-span-3 md:col-start-5 md:row-start-2 mix-blend-difference" >
+            <div class=" z-0 col-span-full col-start-1 row-span-4 row-start-2 sm:-mr-36 md:col-span-3 md:col-start-5 md:row-start-2 mix-blend-difference avatar" >
                   <img src="src/img/me.png" ></img>
             </div>
       </div>
@@ -66,7 +76,7 @@
       <!-- localconnect -->
       <div class="bg-lcPrim">
             <div class="section  text-lcSec">
-                  <div class="col-span-full  col-start- md:col-span-4 md:col-start-3 row-start-1 row-span-6 m-auto max-w-md my-32">
+                  <div class="col-span-full  col-start-2 md:col-span-4 md:col-start-3 row-start-1 row-span-6 m-auto max-w-md my-32">
                         <img src="src/img/z-cover.gif"></img>
                   </div>
                   <div class="info row-start-2" x-intersect="$el.classList.add('fadeInUp')">
@@ -276,7 +286,7 @@
             </div>
             <div class="info row-start-2  z-10" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Description</h1>
-                  <p>Developing a working prototype of orthoplay for Apple Watch. <a href="https://teenage.engineering/products/orthoplay" class="hover:text-gray-300">[Orthoplay]</a> is an application for smartphones that control Teenage Engineering’s speaker <a href="https://teenage.engineering/products/od-11" class="hover:text-gray-300">[OD-11]</a></p>
+                  <p>Developing a working prototype of Orthoplay for Apple Watch. <a href="https://teenage.engineering/products/orthoplay" class="hover:text-gray-300">[Orthoplay]</a> is an application for smartphones that control Teenage Engineering’s speaker <a href="https://teenage.engineering/products/od-11" class="hover:text-gray-300">[OD-11]</a></p>
             </div>
             <div class="info row-start-3 z-10" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Method</h1>
@@ -379,12 +389,16 @@
             </div>
             <div class="info row-start-3" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Method</h1>
-                  <p>Creating a database keeping track of user profiles and their progress.</p>
+                  Creating a full stack website using Asp.Net with a MongoDB database and regular HTML, CSS, JS as front end.
+                  <p>The database stores user profiles and their progress/score. DOM for communication between front and back end. The game itself is developed in JS and graphics made in Illustrator.</p>
             </div>
             <div class="info row-start-4" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Skills</h1>
                   <ul>
-                        <li>DOM/MVC</li>
+                        <li>Asp.Net</li>
+                        <li>MVC</li>
+                        <li>DOM</li>
+                        <li>MongoDB</li>
                         <li>Java</li>
                         <li>HTML/CSS/JS</li>
                         <li>Illustrator</li>
