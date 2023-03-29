@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- <meta name="viewport" content="width=device-width, minimum-scale=1.0,viewport-fit=cover"> -->
       <title>Portfolio</title>
+      <link rel="icon" type="image/png" href="src/img/favicon.ico" sizes="32x32" />
       <link href="./dist/output.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
       <!-- Alpine Plugins -->
@@ -17,10 +18,20 @@
 
 </head>
 <body x-data class="p">
-      <a name="top"></a>
-      <div class="bg-startPrim pt-32">
+     
+      <div class="bg-startPrim ">
       <div class="section text-amber-100">
-            <div class="row-span-2 row-start-1 col-start-1 col-span-2
+            <div class="row-start-1 col-start-1 col-span-2 m-auto h-20">
+                  <ul class="flex">
+                        <li class="mr-3">
+                        <a class="font-bold hover:text-papasec" href="index.html">Portfolio.</a>
+                        </li>
+                        <li >
+                        <a class=" hover:text-papasec" href="blog.html">Blog.</a>
+                        </li>
+                  </ul>
+            </div> 
+            <div class="row-span-2 row-start-2 col-start-1 col-span-2
             ">
                   <h1 class="flex justify-start mt-4 md:mt-20 rotate-90 m-auto">
                         <a class="text-7xl md:text-8xl font-black" href="#top">Bååth.</a>
@@ -32,15 +43,15 @@
                         <a class="titel " href="blog.html">Blog</a>
                   </h1>
             </div> -->
-            <div class="info row-start-1 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
+            <div class="info row-start-2 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Well hello there</h1>
                   <p>My name is Martin Bååth and I am a user experience designer: Striving to make the world around me a bit more enjoyable place to live in – one user test at a time ;)</p>
             </div>
-            <div class="info row-start-2 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
+            <div class="info row-start-3 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Experience</h1>
                   <p>Studied Art in Stockholm and M.sc Interaction & Design at Umeå University.</p>
             </div>
-            <div class="info row-start-3 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
+            <div class="info row-start-4 col-start-3" x-intersect="$el.classList.add('fadeInUp')">
                   <h1 class="titel">Skills</h1>
                   <div class="flex justify-between ">
                         <ul>
@@ -59,7 +70,7 @@
                         </ul>
                   </div>
             </div>
-            <div class="col-start-3 row-start-4 z-50" x-intersect="$el.classList.add('fadeInUp')">
+            <div class="col-start-3 row-start-5 z-50 mb-36" x-intersect="$el.classList.add('fadeInUp')">
                         <div>
                               <h1 class="titel">Contact</h1>
                               <p class=" hover:text-gray-400"><a href="mailto:martinbaath@gmail.com">[Mail]</a></p>
@@ -67,7 +78,7 @@
                               <p class=" hover:text-gray-400"><a href="https://martinbth.github.io/src/CV-MartinBååth.pdf" >[CV]</a></p>
                         </div>
             </div>
-            <div class=" z-0 col-span-full col-start-1 row-span-4 row-start-2 sm:-mr-36 md:col-span-3 md:col-start-5 md:row-start-2 mix-blend-difference avatar" >
+            <div class="z-0 col-span-full col-start-1 row-span-4 row-start-2 sm:-mr-36 md:col-span-3 md:col-start-5 md:row-start-2 mix-blend-difference avatar" >
                   <img src="src/img/me.png" ></img>
             </div>
       </div>

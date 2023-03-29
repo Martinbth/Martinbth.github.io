@@ -72,6 +72,9 @@ ul#tabs-nav li.active {
       .blogTitel{
             @apply text-3xl md:text-4xl mb-8 ;
       }
+      .blogSubTitel{
+            @apply text-2xl my-8 md:text-3xl  ;
+      }
       .blogDate{
             @apply font-mono  text-left text-gray-600;
       }
@@ -130,16 +133,27 @@ ul#tabs-nav li.active {
       }
       @media (prefers-reduced-motion) {
             .fadeInUp,
-            .scale,.fadeInDown {
+            .scale,.fadeInDown,.fade {
                   animation: none;
             }
+      }
+      @keyframes fade {
+            0% {
+                  opacity: 0;
+            }
+            100% {
+                  opacity: 1;
+            }
+      }
+      .fade {
+            animation: fade 1s;
       }
       @keyframes float {
             0% {
                   transform: translatey(0px);
             }
             50% {
-                  transform: translatey(-20px);
+                  transform: translatey(-15px);
             }
             100% {
                   transform: translatey(0px);
