@@ -13,6 +13,11 @@
       $("#blogContent").html(result);
     }});
   });
+  $("#30-03-23").click(function(){
+    $.ajax({url: "30-03-23.html", success: function(result){
+      $("#blogContent").html(result);
+    }});
+  });
 
 
   
