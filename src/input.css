@@ -59,12 +59,15 @@ ul#tabs-nav li.active {
             @apply  z-10 rounded-lg;
       }
       .blogImg{
-            @apply  m-auto min-w-full  my-12 rounded-md shadow-2xl;  
+            @apply  m-auto min-w-full  my-16 rounded-md ;  
       }
 
-      .blogPost{
-            @apply row-start-2 col-start-3 col-span-full md:col-start-4 md:col-span-4 mb-44 ;
+      .blogPost {
+            @apply row-start-2 col-start-3 col-span-full md:col-start-4 md:col-span-4  mb-44 ;
       }
+      
+     
+     
 
       .blogCite{
             @apply italic border-l-4  px-8 my-8;

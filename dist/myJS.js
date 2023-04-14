@@ -1,8 +1,16 @@
 // $(function(){
 //   $("#blog-placeholder").load("blogPosts.html");
 // });
-
-
+  $("#13-04-23").click(function(){
+    $.ajax({url: "13-04-23.html", success: function(result){
+      $("#blogContent").html(result);
+    }});
+  });
+  $("#04-04-23").click(function(){
+    $.ajax({url: "04-04-23.html", success: function(result){
+      $("#blogContent").html(result);
+    }});
+  });
   $("#09-02-23").click(function(){
     $.ajax({url: "09-02-23.html", success: function(result){
       $("#blogContent").html(result);
@@ -30,7 +38,7 @@
     $(activeTab).fadeIn();
     return false;
   });
-  
+ 
 
 jQuery(function(){
   var transition_time = 250;
