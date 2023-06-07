@@ -1,5 +1,6 @@
+
 p, ul {
-      font-weight: 400
+  
 }
 
 div h1{
@@ -56,10 +57,10 @@ ul#tabs-nav li.active {
             @apply md:text-lg;
       }
       .img {
-            @apply  z-10 rounded-md shadow-sm shadow-zinc-900;
+            @apply  z-10  shadow-sm shadow-zinc-900;
       }
       .blogImg{
-            @apply  m-auto min-w-full  my-16 rounded-md ;  
+            @apply  m-auto min-w-full  my-16 rounded-md shadow-sm shadow-zinc-900;  
       }
 
       .blogPost {
@@ -79,7 +80,7 @@ ul#tabs-nav li.active {
             @apply text-2xl my-8 md:text-3xl  ;
       }
       .blogDate{
-            @apply font-mono  text-left text-gray-600;
+            @apply   text-left text-gray-800;
       }
       /* Blog Navigation */
       .blogNav{
