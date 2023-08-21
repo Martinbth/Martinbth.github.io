@@ -67,9 +67,6 @@ ul#tabs-nav li.active {
             @apply row-start-2 col-start-3 col-span-full md:col-start-4 md:col-span-4  mb-44 ;
       }
       
-     
-     
-
       .blogCite{
             @apply italic border-l-4  px-8 my-8;
       }
@@ -80,7 +77,7 @@ ul#tabs-nav li.active {
             @apply text-2xl my-8 md:text-3xl  ;
       }
       .blogDate{
-            @apply   text-left text-gray-800;
+            @apply   text-left text-gray-500;
       }
       /* Blog Navigation */
       .blogNav{
